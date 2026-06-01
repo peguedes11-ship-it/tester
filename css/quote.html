@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PNWX - Procurement Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Pacific Northwest X-Ray Inc.</h1>
+        <p>High-Contrast Product Catalog Showroom</p>
+        <p class="slogan">Simply the Best!</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="equipment.html">Equipment</a>
+        <a href="supplies.html">Supplies</a>
+        <a href="accessories.html">Accessories</a>
+        <a href="parts.html">Parts</a>
+        <a href="protection.html">Protection</a>
+        <a href="darkroom.html">Darkroom</a>
+        <a href="portable.html">Portable Units</a>
+        <a href="phantoms.html">Test Phantoms</a>
+        <a href="quote.html" class="active">Get a Quote</a>
+        <a href="buy.html">Contact & Policies</a>
+    </nav>
+
+    <div class="wrapper">
+        <div class="form-section">
+            <h2>Procurement Quote Request</h2>
+            <p style="margin-bottom: 25px;">Fill out this form to request product details.</p>
+            
+            <form onsubmit="alert('Thank you! Your mock request was submitted.'); return false;">
+                <div class="form-group">
+                    <label>Hospital or Clinic Name:</label>
+                    <input type="text" required>
+                </div>
+                <div class="form-group">
+                    <label>Equipment Classification:</label>
+                    <select>
+                        <option>Radiation Safety Gear</option>
+                        <option>Portable Diagnostic Tools</option>
+                        <option>Replacement Parts & Bulbs</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Specific Product Requirements:</label>
+                    <textarea rows="4"></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Submit Request</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Pacific Northwest X-Ray Inc. | Links: <a href="https://www.facebook.com" target="_blank">Facebook</a> | <a href="https://www.instagram.com" target="_blank">Instagram</a></p>
+    </footer>
+
+</body>
+</html>

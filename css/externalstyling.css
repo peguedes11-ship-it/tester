@@ -1,0 +1,459 @@
+<style>
+*{
+margin: 0px;
+font-family: 'Press Start 2p', arial;
+}
+#metalman{
+background-color: rgb(220, 40, 75);
+}
+#metalmanheader{
+height: 250px;
+width: 100%;
+display: flex;
+background-image: linear-gradient(to right, black, black, black, rgb(220, 40, 75));
+}
+#megamanlogo{
+height:250px;
+width: 25%;
+}
+#metalmanemptyspace, #airmanemptyspace, #quickmanemptyspace, #woodmanemptyspace, #heatmanemptyspace, #flashmanemptyspace, #crashmanemptyspace, #bubblemanemptyspace{
+height: 30px;
+width: 100%;
+}
+#metalmantop, #airmantop, #quickmantop, #woodmantop, #heatmantop, #flashmantop, #crashmantop, #bubblemantop{
+height: 250px;
+width: 100%;
+display: flex;
+}
+#metalmanpic, #metalmanstage, #airmanpic, #airmanstage, #quickmanpic, #quickmanstage, #woodmanpic, #woodmanstage, #heatmanpic, #heatmanstage, #flashmanpic, #flashmanstage, #crashmanpic, #crashmanstage, #bubblemanpic, #bubblemanstage{
+height: 250px;
+}
+#metalmanpic, #airmanpic, #quickmanpic, #woodmanpic, #heatmanpic, #flashmanpic, #crashmanpic, #bubblemanpic{
+width: 20%;
+}
+#metalman1, #metalman2, #airman1, #airman2, #quickman1, #quickman2, #woodman1, #woodman2, #heatman1, #heatman2, #flashman1, #flashman2, #crashman1, #crashman2, #bubbleman1, #bubbleman2{
+height: 250px;
+}
+#metalmanstage, #airmanstage, #quickmanstage, #woodmanstage, #heatmanstage, #flashmanstage, #crashmanstage, #bubblemanstage{
+width: 60%;
+}
+#metalmanbottom, #airmanbottom, #quickmanbottom, #woodmanbottom, #heatmanbottom, #flashmanbottom, #crashmanstage, #bubblemanstage{
+height: 600px;
+width: 100%;
+}
+h2{
+margin-top: 10px;
+height: 60px;
+width: 100%;
+text-align: center;
+color: white;
+}
+#leftrightcontainer{
+height: 560px;
+width: 100%;
+display: flex;
+}
+#metalmanleft, #metalmanright, #airmanleft, #airmanright, #quickmanleft, #quickmanright, #woodmanleft, #woodmanright, #heatmanleft, #heatmanright, #flashmanleft, #flashmanright, #crashmanleft, #crashmanright, #flashmanleft, #flashmanright, #bubblemanleft, #bubblemanright{
+height: 560px;
+width: 50%;
+color: white;
+line-height: 20px;
+}
+#bossname{
+height: 250px;
+width: 75%;
+align-items: center;
+justify-content: center;
+display: flex;
+font-size: 40px;
+color: white;
+}
+nav{
+height: 50px;
+width: 100%;
+background-color: black;
+align-items: center;
+justify-content: center;
+display: flex;
+}
+a{
+height: 50px;
+width: auto;
+font-size: 18px;
+margin-right: 1.5px;
+margin-left: 1.5px;
+padding-top: 15px;
+padding-bottom: 15px;
+color: white;
+text-decoration: none;
+align-items: center;
+justify-content: center;
+display: flex;
+}
+#metalmanfooter, #airmanfooter, #quickmanfooter, #woodmanfooter, #heatmanfooter, #flashmanfooter, #crashmanfooter, #bubblemanfooter{
+height: 200px;
+width: 100%;
+display: flex;
+}
+#socialmediaicon{
+height: 200px;
+width: 100px;
+}
+#x, #youtube, #instagram, #tiktok{
+height: 200px;
+width: 100px;
+}
+#legalstuff{
+margin-right: 40px;
+}
+#airman{
+background-color: blue;
+}
+#quickman{
+background-color: #AD1C42;
+}
+#bubbleman{
+background-color: #2C5F34;
+}
+#woodman{
+background-color: #D2B48C;
+}
+#heatman{
+background-color: #DD571C;
+}
+#crashman{
+background-color: #FF4B33;
+}
+#flashman{
+background-color: #D8D8D8;
+}
+#airmanheader{
+height: 250px;
+width: 100%;
+display: flex;
+background-image: linear-gradient(to right, black, black, black, blue);
+}
+#quickmanheader{
+height: 250px;
+width: 100%;
+display: flex;
+background-image: linear-gradient(to right, black, black, black, #AD1C42);
+}
+#bubblemanheader{
+height: 250px;
+width: 100%;
+display: flex;
+background-image: linear-gradient(to right, black, black, black, #2C5F34);
+}
+#woodmanheader{
+height: 250px;
+width: 100%;
+display: flex;
+background-image: linear-gradient(to right, black, black, black, #D2B48C);
+}
+#heatmanheader{
+height: 250px;
+width: 100%;
+display: flex;
+background-image: linear-gradient(to right, black, black, black, #DD571C);
+}
+#crashmanheader{
+height: 250px;
+width: 100%;
+display: flex;
+background-image: linear-gradient(to right, black, black, black, #FF4B33);
+}
+#flashmanheader{
+height: 250px;
+width: 100%;
+display: flex;
+background-image: linear-gradient(to right, black, black, black, #D8D8D8);
+}
+#bossselect{
+background-color: #0071EF;
+}
+#bossselectheader{
+background-color: #0071EF;
+height: 50px;
+width: 100%;
+position: relative;
+top: 30px;
+}
+#tophalfheader, #bottomhalfheader{
+height: 4px;
+width: 100%;
+border-top: solid 2.65px white;
+border-bottom: solid 2.65px white;
+}
+#tophalfheader{
+border-top: solid 3.25px white;
+}
+#bottomhalfheader{
+border-bottom: solid 3.25px white;
+}
+#textcontentheader{
+height: 24px;
+width: 30%;
+position: absolute;
+top: 0px;
+left: 33.3%;
+z-index: 1;
+font-size: 24px;
+color: white;
+letter-spacing: 1.25px;
+background-color: #0071EF;
+align-items: center;
+justify-content: center;
+display: flex;
+}
+#bossselectfirstrow{
+height: 50px;
+width: 100%;
+background-color: #0071EF;
+position: relative;
+top: 90px;
+}
+#skinny, #thick{
+width: 100%;
+background-color: #00EBDE;
+margin-top: 4px;
+margin-bottom: 4px;
+}
+#skinny{
+height: 2.2px;
+margin-top: 2.75px;
+margin-bottom: 2.75px;
+}
+#thick{
+height: 24px;
+}
+#bubblemansquare1, #airmansquare1, #quickmansquare1{
+height: 180px;
+width: 180px;
+background-color: white;
+border: solid 4px black;
+position: absolute;
+top: -60px;
+left: 20.5%;
+justify-content: center;
+align-items: center;
+display: flex;
+}
+#airmansquare1{
+position: absolute;
+top: -60px;
+left: 42%;
+}
+#quickmansquare1{
+position: absolute;
+top: -60px;
+left: 62%;
+}
+#bubblemansquare2, #airmansquare2, #quickmansquare2{
+height: 170px;
+width: 170px;
+background-color: cyan;
+border: solid 2px black;
+justify-content: center;
+align-items: center;
+display: flex;
+}
+#bubblemansquare3, #airmansquare3, #quickmansquare3{
+height: 155px;
+width: 155px;
+background-color: cyan;
+border: solid 4px white;
+justify-content: center;
+align-items: center;
+display: flex;
+}
+#headshotholder{
+height: 145px;
+width: 145px;
+justify-content: center;
+align-items: center;
+display: flex;
+}
+#bubblemanheadshot, #airmanheadshot, #quickmanheadshot{
+height: 100%;
+width: 100%;
+}
+#blackcornersquare1{
+height: 18px;
+width: 18px;
+position: absolute;
+top:0px;
+left: 0px;
+background-color: black;
+align-items: center;
+justify-content: center;
+display: flex;
+}
+#blackcornersquare2{
+height: 18px;
+width: 18px;
+position: absolute;
+top:0px;
+right: 0px;
+background-color: black;
+align-items: center;
+justify-content: center;
+display: flex;
+}
+#blackcornersquare3{
+height: 18px;
+width: 18px;
+position: absolute;
+bottom:0px;
+left: 0px;
+background-color: black;
+align-items: center;
+justify-content: center;
+display: flex;
+}
+#blackcornersquare4{
+height: 18px;
+width: 18px;
+position: absolute;
+bottom:0px;
+right: 0px;
+background-color: black;
+align-items: center;
+justify-content: center;
+display: flex;
+}
+#innersquare{
+height: 16px;
+width: 16px;
+color: black;
+}
+#nameplate{
+width: 180px;
+height: 60px;
+color: white;
+font-size: 30px;
+letter-spacing: .5px;
+position: absolute;
+bottom: -70px;
+}
+#tophalfnameplate{
+width: 180px;
+height: 30px;
+text-align: left;
+}
+#bottomhalfnameplate{
+width: 180px;
+height: 30px;
+text-align: right;
+}
+#bossselectsecondrow{
+height: 50px;
+width: 100%;
+background-color: #0071EF;
+position: relative;
+top: 320px;
+}
+#heatmansquare1, #drwilysquare1, #woodmansquare1{
+height: 180px;
+width: 180px;
+background-color: white;
+border: solid 4px black;
+position: absolute;
+top: -60px;
+left: 21%;
+justify-content: center;
+align-items: center;
+display: flex;
+}
+#drwilysquare1{
+position: absolute;
+top: -60px;
+left: 42%;
+}
+#woodmansquare1{
+position: absolute;
+top: -60px;
+left: 62%;
+}
+#heatmansquare2, #drwilysquare2, #woodmansquare2{
+height: 170px;
+width: 170px;
+background-color: cyan;
+border: solid 2px black;
+justify-content: center;
+align-items: center;
+display: flex;
+}
+#heatmansquare3, #drwilysquare3, #woodmansquare3{
+height: 155px;
+width: 155px;
+background-color: cyan;
+border: solid 4px white;
+justify-content: center;
+align-items: center;
+display: flex;
+}
+#heatmanheadshot, #drwilyheadshot, #woodmanheadshot{
+height: 100%;
+width: 100%;
+}
+#bossselectthirdrow{
+height: 50px;
+width: 100%;
+background-color: #0071EF;
+position: relative;
+top: 550px;
+}
+#metalmansquare1, #flashmansquare1, #crashmansquare1{
+height: 180px;
+width: 180px;
+background-color: white;
+border: solid 4px black;
+position: absolute;
+top: -60px;
+left: 21%;
+justify-content: center;
+align-items: center;
+display: flex;
+}
+#flashmansquare1{
+position: absolute;
+top: -60px;
+left: 42%;
+}
+#crashmansquare1{
+position: absolute;
+top: -60px;
+left: 62%;
+}
+#metalmansquare2, #flashmansquare2, #crashmansquare2{
+height: 170px;
+width: 170px;
+background-color: cyan;
+border: solid 2px black;
+justify-content: center;
+align-items: center;
+display: flex;
+}
+#metalmansquare3, #flashmansquare3, #crashmansquare3{
+height: 155px;
+width: 155px;
+background-color: cyan;
+border: solid 4px white;
+justify-content: center;
+align-items: center;
+display: flex;
+}
+#metalmanheadshot, #flashmanheadshot, #crashmanheadshot{
+height: 100%;
+width: 100%;
+}
+#bossselect a:hover #innersquare{
+animation: animateBox .275s linear infinite;
+}
+@keyframes animateBox{
+50%{
+background-color: #FFFFFF;
+}
+
+</style>
